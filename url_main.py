@@ -24,7 +24,7 @@ class UrlMain():
                 download=self.urldownload.download(page_url,ip)#下载页面
                 data,new_urls=self.urlparser.get_moviename_and_score(page_url,download)#解析，并拿到返回值
                 self.urlmanager.add_new_urls(new_urls)#添加新的url去待抓取的url集合中去
-                file_obj = open('douban_spider.json', 'a+')
+                file_obj = open('douban_spider.json', 'a+',encoding='utf-8')
                 self.urldata.wiret_data(file_obj,data,page_url)#写文件
                 file_obj.close()
                 count += 1
