@@ -1,8 +1,1 @@
-一个爬取豆瓣电影信息、简介和评分的爬虫
-使用到的库：bs4,urllib,time,re
-python版本3.5.2
-Run url_main即可开始爬虫
-url_manager是用来管理待爬取的URL的，download获取页面，parser进行解析，data将信息写入json文件
-代理是从网上免费获取的，质量很不好
-验证IP和爬虫在同一个线程里，所以很多时间都会花在获得一个可用IP上
-因为编码问题有些页面的信息会无法写入到json文件中
+<div><div>一个爬取豆瓣电影信息、简介和评分的爬虫</div><div>使用到的库：bs4,urllib,time,re</div><div>python版本3.5.2</div><div>Run url_main即可开始爬虫</div><div>url_manager是用来管理待爬取的URL的，download获取页面，parser进行解析，data将信息写入json文件</div><div>代理是从网上免费获取的，质量很不好</div><div>验证IP和爬虫在同一个线程里，所以很多时间都会花在获得一个可用IP上</div><div>因为编码问题有些页面的信息会无法写入到json文件中</div></div>
