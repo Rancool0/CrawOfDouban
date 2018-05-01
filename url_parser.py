@@ -28,5 +28,8 @@ class UrlParser():
         data['name']=moviename.get_text()
         data['score']=score.get_text()
         data['info']=info.get_text()
-        data['detail']=detail.get_text().replace(' ','').replace('\n','').replace('　　','').replace('•',' ')
+        if detail is not None:
+            data['detail']=detail.get_text().replace(' ','').replace('\n','').replace('　　','').replace('•',' ')
+        else:
+            data['detail']=''
         return data,new_urls
